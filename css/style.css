@@ -4,12 +4,25 @@
 }
 
 header {
-    text-align: center;
-    border : 5px solid black;
-    border-style: double;
-    padding: 10px;
+    border: 5px double black;
     background-color: #66A3BF;
-    font-family: bold, "Black-ops-one", sans-serif;
+    font-family: "Black-ops-one", sans-serif;
+}
+
+#icon {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    float: none;
+    margin: 0;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+header h3 {
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 body {
@@ -17,13 +30,6 @@ body {
     background-color: #F2EFE7;
 }
 
-#icon {
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 15px;
-}
 
 h2 {
     font-size: 24px;
