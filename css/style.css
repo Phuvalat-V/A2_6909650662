@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Black-ops-one";
+    src: url("../media/Black_Ops_One/BlackOpsOne-Regular.ttf");
+}
+
+header {
+    text-align: center;
+    border : 5px solid black;
+    border-style: double;
+    padding: 10px;
+    background-color: #66A3BF;
+    font-family: bold, "Black-ops-one", sans-serif;
+}
+
+body {
+    padding: 15px;
+    background-color: #F2EFE7;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #C8DFDB;
+    padding: 10px;
+    font-family:  "Black-ops-one", sans-serif;
+}
+
+#highlight {
+    color: #008cff;
+    font-weight: bold;
+}
+
+a {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.big {
+    font-weight: bold;
+    font-style: italic;
+}
