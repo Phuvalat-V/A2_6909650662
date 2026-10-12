@@ -74,3 +74,40 @@ a {
         padding: 16px;
     }
 }
+
+.portfolio-card {
+    border: 1px solid #C8DFDB;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.portfolio-card .card-body {
+    padding: 24px;
+}
+
+.portfolio-card h3 {
+    color: #24566B;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-card h4 {
+    color: #24566B;
+    font-size: 1.15rem;
+    margin-top: 24px;
+}
+
+.portfolio-card p {
+    line-height: 1.7;
+}
+
+.portfolio-card a {
+    color: #0066CC;
+}
+
+@media (max-width: 767.98px) {
+    .portfolio-card .card-body {
+        padding: 16px;
+    }
+}
