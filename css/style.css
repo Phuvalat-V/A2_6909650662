@@ -1,12 +1,7 @@
-@font-face {
-    font-family: "Black-ops-one";
-    src: url("../media/Black_Ops_One/BlackOpsOne-Regular.ttf");
-}
-
 header {
     border: 5px double black;
     background-color: #66A3BF;
-    font-family: "Black-ops-one", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 #icon {
@@ -25,12 +20,6 @@ header h3 {
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2EFE7;
-}
-
 
 h2 {
     font-size: 24px;
@@ -38,7 +27,8 @@ h2 {
     margin-bottom: 10px;
     background-color: #C8DFDB;
     padding: 10px;
-    font-family:  "Black-ops-one", sans-serif;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
 }
 
 #highlight {
@@ -75,16 +65,6 @@ a {
     }
 }
 
-.portfolio-card {
-    border: 1px solid #C8DFDB;
-    border-radius: 12px;
-    background-color: #FFFFFF;
-    overflow: hidden;
-}
-
-.portfolio-card .card-body {
-    padding: 24px;
-}
 
 .portfolio-card h3 {
     color: #24566B;
@@ -112,14 +92,6 @@ a {
     }
 }
 
-/* General Layout */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2EFE7;
-    color: #292929;
-}
 
 main {
     max-width: 1100px;
@@ -145,17 +117,18 @@ main h2 {
     margin-bottom: 12px;
 }
 
-/* Portfolio Cards */
-
-.portfolio-card {
-    transition: box-shadow 0.2s ease;
+.about-card,
+.portfolio-card,
+.content-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.portfolio-card:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+.about-card:hover,
+.portfolio-card:hover,
+.content-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
-
-/* Portfolio Images */
 
 .portfolio-card img {
     width: 100%;
@@ -188,5 +161,56 @@ footer p {
 
     footer {
         font-size: 0.85rem;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2EFE7;
+    color: #292929;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Outfit", sans-serif;
+}
+
+header h1 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.navbar .nav-link {
+    color: #24566B;
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #008cff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content-card {
+    background-color: #FFFFFF;
+    border: 1px solid #C8DFDB;
+    border-radius: 12px;
+}
+
+.content-card .card-body {
+    padding: 24px;
+}
+
+.content-card p,
+.content-card li {
+    line-height: 1.8;
+}
+
+@media (max-width: 767.98px) {
+    .content-card .card-body {
+        padding: 16px;
     }
 }

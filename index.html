@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>My Learning Portfolio | Phuvalat</title>
 </head>
@@ -30,6 +36,17 @@
         </div>
     </div>
 </header>
+
+<nav class="navbar navbar-expand bg-white border-bottom">
+    <div class="container justify-content-center">
+        <div class="navbar-nav flex-row flex-wrap justify-content-center gap-2 gap-md-4">
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#process">How I Built It</a>
+            <a class="nav-link" href="#reflection">Reflections</a>
+        </div>
+    </div>
+</nav>
 
 <main class="container">
 
@@ -199,19 +216,25 @@
 
     <h2 class="mb-4"><b>03</b> What I Built</h2>
 
-    <p>
-        I developed my A1 Learning Portfolio into a responsive
-        website using HTML, CSS, and Bootstrap 5.
-        The website includes an About Me section and a
-        portfolio section to showcase my work and experiences.
-    </p>
+    <div class="card content-card">
+        <div class="card-body">
 
-    <p>
-        I used Bootstrap Grid to organize the content
-        into different columns depending on the screen size.
-        This makes the website easier to use on both
-        desktop and mobile devices.
-    </p>
+            <p>
+                I developed my A1 Learning Portfolio into a responsive
+                website using HTML, CSS, and Bootstrap 5.
+                The website includes an About Me section and a
+                portfolio section to showcase my work and experiences.
+            </p>
+
+            <p class="mb-0">
+                I used Bootstrap Grid to organize the content
+                into different columns depending on the screen size.
+                This makes the website easier to use on both
+                desktop and mobile devices.
+            </p>
+
+        </div>
+    </div>
 
 </section>
 
@@ -220,64 +243,77 @@
 
     <h2 class="mb-4"><b>04</b> How I Built It</h2>
 
-    <ol>
-        <li>
-            I started by using my previous A1 website
-            as the foundation for this project.
-        </li>
+    <div class="card content-card">
+        <div class="card-body">
 
-        <li>
-            I added Bootstrap 5 to improve the layout
-            and make the website responsive.
-        </li>
+            <ol>
+                <li>
+                    I started by using my previous A1 website
+                    as the foundation for this project.
+                </li>
 
-        <li>
-            I used Bootstrap containers, rows, and columns
-            to organize the About Me and Portfolio sections.
-        </li>
+                <li>
+                    I added Bootstrap 5 to improve the layout
+                    and make the website responsive.
+                </li>
 
-        <li>
-            I customized the colors, fonts, and spacing
-            using CSS.
-        </li>
+                <li>
+                    I used Bootstrap containers, rows, and columns
+                    to organize the About Me and Portfolio sections.
+                </li>
 
-        <li>
-            I used Git and GitHub to track changes
-            and GitHub Issues to organize my tasks.
-        </li>
+                <li>
+                    I customized the colors, fonts, and spacing
+                    using CSS.
+                </li>
 
-        <li>
-            I tested the website on different screen sizes
-            to check its layout and readability.
-        </li>
-    </ol>
+                <li>
+                    I used Git and GitHub to track changes
+                    and GitHub Issues to organize my tasks.
+                </li>
+
+                <li>
+                    I tested the website on different screen sizes
+                    to check its layout and readability.
+                </li>
+            </ol>
+
+        </div>
+    </div>
 
 </section>
 
+<!-- Reflections -->
 <!-- Reflections -->
 <section id="reflection" class="my-5">
 
     <h2 class="mb-4"><b>05</b> Reflections</h2>
 
-    <p>
-        This assignment helped me understand how to use
-        Bootstrap to create responsive web layouts.
-        I also learned how GitHub Issues and commits
-        can help organize the development process.
-    </p>
+    <div class="card content-card">
+        <div class="card-body">
 
-    <p>
-        One of the challenges was adjusting my original
-        CSS to work properly with Bootstrap.
-        I had to test different layouts and make changes
-        to improve the appearance of the website.
-    </p>
+            <p>
+                This assignment helped me understand how to use
+                Bootstrap to create responsive web layouts.
+                I also learned how GitHub Issues and commits
+                can help organize the development process.
+            </p>
 
-    <p>
-        In the future, I would like to improve my web
-        design skills and learn more about building
-        interactive websites.
-    </p>
+            <p>
+                One of the challenges was adjusting my original
+                CSS to work properly with Bootstrap.
+                I had to test different layouts and make changes
+                to improve the appearance of the website.
+            </p>
+
+            <p class="mb-0">
+                In the future, I would like to improve my web
+                design skills and learn more about building
+                interactive websites.
+            </p>
+
+        </div>
+    </div>
 
 </section>
 
